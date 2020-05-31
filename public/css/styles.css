@@ -1,0 +1,122 @@
+html {
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #323232 50%, #f1f1f6 50%);
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+body{
+  background-color: transparent !important;
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+  margin-top: 100px;
+}
+.logoutButton{
+  width: 120px;
+}
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #323232;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #323232;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form.list {
+  text-align: center;
+  margin-left: 20px;
+}
+
+.btnPlus {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #323232;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+.btnDelete{
+    margin-left: 10px;
+}
+.labelbtn{
+  margin-left: 5px;
+  height: 38px;
+  width: 85px;
+}
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+.queryData{
+  border: black;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #323232;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: #a6b1e1;
+  text-align: center;
+}
+.containerContAbout{
+  width: 400px;
+  background-color: #fff;
+  margin-top: 100px;
+}
+.btnMail{
+  margin-bottom: 10px;
+}
+.contData{
+  text-align: center;
+}

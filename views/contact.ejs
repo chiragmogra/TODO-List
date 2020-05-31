@@ -1,0 +1,54 @@
+<%- include("partials/header") %>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/list"><i class="fas fa-list-alt"></i> TODO List</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#todoContents" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="todoContents">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link" href="/about">About</a>
+      <a class="nav-item nav-link" href="/contact">Contact-Us</a>
+    </div>
+  </div>
+</nav>
+<form action="mailto:chiragmogra24@gmail.com" method="post" enctype="text/plain">
+<div class="container containerContAbout">
+  <p class="contData"><i class="fas fa-envelope fa-6x"></i></p>
+
+  <div class="form-group">
+    <label for="inputEmail4">Email</label>
+    <input type="email" name="email " class="form-control" id="inputEmail4" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label>Your Query</label>
+    <input type="text" name="Query " class="form-control queryData"  placeholder="Query">
+  </div>
+<button type="submit" class="btn btn-dark btnMail">Send Msg</button>
+</form>
+
+</div>
+  <!-- <h1>CONTACT DETAILS:</h1>
+  <br>
+  <hr size="2">
+  <h2>Name: Chirag Mogra</h2>
+  <h3>Contact No: 7073094192</h3>
+  <h3>Email: chiragmogra24@gmail.com</h3>
+  <h3>Address : Near SKIT, Jaipur</h3>
+
+  <form  action="mailto:chiragmogra24@gmail.com" method="post" enctype="text/plain">
+  <label>Your Name:    </label>
+  <input type="text" name="YourNAME" value=>
+  <br>
+  <br>
+  <label>Enter Email:</label>
+  <input type="email" name="YourEmail" value="">
+  <br><br>
+
+  <label>Your Query:</label>
+  <textarea name="Message:" rows="20" cols="100"></textarea><br><br>
+  <input type="submit" name="" >
+  <input type="reset" name="reset" >
+  <br><br>
+  </form> -->
+<%- include("partials/footer") %>

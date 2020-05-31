@@ -1,0 +1,51 @@
+<%- include("partials/header") %>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/list"><i class="fas fa-list-alt"></i> TODO List</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#todoContents" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="todoContents">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link" href="/about">About</a>
+      <a class="nav-item nav-link" href="/contact">Contact-Us</a>
+      <a class="btn btn-light btn-md logoutButton" href="/logout" role="button">Log Out</a>
+    </div>
+  </div>
+</nav>
+  <div class="box" id="heading">
+    <h1> TODO List </h1>
+  </div>
+
+  <div class="box">
+  <% newListItems.forEach(function(item){  %>
+    <form action="/delete" method="post">
+      <div class="item">
+        <button class="btnDelete btn btn-dark btn-circle" type="delete" name="deleteButton" value="<%= item._id %>"><i class="fas fa-trash-alt"></i></button>
+          <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle btn-dark labelbtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Label
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li>Task Type:<%=  item.taskType  %></li>
+          </div>
+          </div>
+        <p><%=  item.name  %></p>
+      </div>
+    </form>
+  <% })  %>
+
+      <form class="item" action="/list" method="post">
+        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+        <select class="selectpicker dropdown" data-style="btn-info" name="selectpicker">
+        <optgroup label="Select Task Type">
+            <option name="table1" value="Personal" class="dropdown-item">Personal</option>
+            <option name="table2" value="Office" class="dropdown-item">Office</option>
+            <option name="table3" value="Other" class="dropdown-item">Other</option>
+        </optgroup>
+      </select>
+        <button class="btnPlus" type="submit" name="list">+</button>
+      </form>
+  </div>
+
+<%- include("partials/footer") -%>

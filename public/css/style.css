@@ -1,0 +1,35 @@
+
+body {
+  background-color: #5f6769;
+}
+
+.centered {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+footer {
+  color: #a6b1e1;
+  text-align: center;
+}
+.jumbotron{
+  background-color: #e9e1cc;
+  background-image: -webkit-linear-gradient(65deg, #222831 50%, #f1f1f6 50%);
+}
+.container{
+  background-color: #fff;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  width: 450px;
+  
+}
+.logRegCont{
+  margin-top: 100px;
+}

@@ -1,0 +1,23 @@
+<%- include("partials/header") %>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="/list"><i class="fas fa-list-alt"></i> TODO List</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#todoContents" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="todoContents">
+  <div class="navbar-nav ml-auto">
+    <a class="nav-item nav-link" href="/about">About</a>
+    <a class="nav-item nav-link" href="/contact">Contact-Us</a>
+  </div>
+</div>
+</nav>
+
+    <div class="container containerContAbout">
+      <ul>
+        <li>This is TODO list developed by Chirag Mogra </li>
+        <li>If you face any problem than <a href="/contact">Contact me</a>.</li>
+        <li>Register yourself to keep your todo's safe with us.</li>
+      </ul>
+    </div>
+<%- include("partials/footer") %>
